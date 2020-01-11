@@ -3,6 +3,11 @@ body {
   background-color: #031921;
 }
 
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
 * {
 	margin: 0;
 	padding: 0;
@@ -12,6 +17,7 @@ body {
 hr {
   height: 5px;
   margin: -0.5em 0;
+  position: relative;
   padding: 0;
   color: #E8A149;
   background-color: #E8A149;
@@ -27,9 +33,18 @@ a:visited {
   color: #E8A149;
 }
 
+a {
+	color: #777;
+	transition: all .4s ease-in-out;
+	font-size: 24px;
+	text-decoration: none;
+}
+
 /* mouse over link */
 a:hover {
-  color: hotpink;
+	font-size: 28px;
+	color: hotpink;
+	padding-bottom: 2px;
 }
 
 /* selected link */
@@ -38,7 +53,6 @@ a:active {
 }
 
 .present {
-	color: #ffffd3;
 	margin-top: 5px;
 	font-size: 17px;
     font-family: "Arial";
@@ -57,10 +71,10 @@ a:active {
 }
 
 .skills {
-	color: #ffffd3;
+	color: #2e2e1f;
 	margin-left: 70px;
 	margin-top: 35px;
-	font-size: 18px;
+	font-size: 22px;
     font-family: "Times New Roman";
     text-align: left;
 }
