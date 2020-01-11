@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Welcome on Martin website</title>
+		<link rel="stylesheet" href="./src/beauty.css">
+		<script src="./src/script.js"></script>
+	</head>
+	<body>
+		<div class="owlArea">
+			<canvas id="owl" width="180" height="400">
+		</div>
+		<script type="text/javascript">
+		function my_draw_square(square, x, y, color) {
+			square.beginPath();
+			square.rect(x, y, 30, 10);
+			square.fillStyle = color;
+			square.strokeStyle = color;
+			square.fill;
+			square.lineWidth = 20;
+			square.stroke();
+		}
+
+		function owl_blink() {
+			var blinker = document.getElementById("owl").getContext("2d");
+
+			my_draw_square(blinker, 75, 170, "black");
+		}
+		</script>
+		<div class="present">
+			<h1>Fosowl</h1>
+			<img src="./assets/me.png">
+			<h2 style="font-style: italic;">"ugly code still works"</h2>
+		</div>
+		<div class="redirect_link">
+			<a style="margin: 20px" href="https://github.com/segfaultMaster">github</a>
+			<a style="margin: 0px 20px" href="https://www.linkedin.com/in/martin-legrand-309885185/">Linkedin</a>
+		</div>
+		<hr></hr>
+		<div class="skills">
+			<h3>Skills :</h3>
+		</div>
+		<script type="text/javascript">
+		function my_draw_circle(circle, x, y, turn, color) {
+			circle.beginPath();
+			x += 30;
+			circle.arc(x, y, 60, 0, (Math.PI * 2) * turn, false);
+			circle.fillStyle = color;
+			circle.strokeStyle = color;
+			circle.lineWidth = 4;
+			circle.stroke();
+		}
+
+		let i = 0;
+
+		function load_circle() {
+			var circle = document.getElementById("canvas").getContext("2d");
+			var circle2 = document.getElementById("canvas").getContext("2d");
+			var circle3 = document.getElementById("canvas").getContext("2d");
+			var circle4 = document.getElementById("canvas").getContext("2d");
+			var circle5 = document.getElementById("canvas").getContext("2d");
+			var circle_b = document.getElementById("canvas").getContext("2d");
+			var circle2_b = document.getElementById("canvas").getContext("2d");
+			var circle3_b = document.getElementById("canvas").getContext("2d");
+			var circle4_b = document.getElementById("canvas").getContext("2d");
+			var circle5_b = document.getElementById("canvas").getContext("2d");
+
+			my_draw_circle(circle, 82, 85, 1.0, "white");
+			my_draw_circle(circle2, 225, 85, 1.0, "white");
+			my_draw_circle(circle3, 367, 85, 1.0, "white");
+			my_draw_circle(circle4, 510, 85, 1.0, "white");
+			my_draw_circle(circle5, 652, 85, 1.0, "white");
+			my_draw_circle(circle_b, 82, 85, 0.9 * (i / 100), "orange");
+			my_draw_circle(circle2_b, 225, 85, 0.5 * (i / 100), "orange");
+			my_draw_circle(circle3_b, 367, 85, 0.7 * (i / 100), "orange");
+			my_draw_circle(circle4_b, 510, 85, 0.3 * (i / 100), "orange");
+			my_draw_circle(circle5_b, 652, 85, 0.6 * (i / 100), "orange");
+			i++;
+
+			setTimeout(function() {
+				if (i < 100)
+					window.requestAnimationFrame(load_circle);
+    		}, 50);
+		}
+
+		function load_to_window() {
+			owl_blink();
+			window.requestAnimationFrame(load_circle);
+		}
+		window.onload = load_to_window;
+		</script>
+		<div class="canvas0">
+			<canvas id="canvas" width="900" height="150"></canvas>
+		</div>
+		<div class="language_icon">
+			<img src="./assets/c.png">
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<img src="./assets/csharp.png">
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<img src="./assets/go.png">
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<img src="./assets/js.png">
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<img src="./assets/python.png">
+		</div>
+	</body>
+</html>

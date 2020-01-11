@@ -1,0 +1,110 @@
+
+body {
+  background-color: #031921;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	margin-bottom: 10px;
+}
+
+hr {
+  height: 5px;
+  margin: -0.5em 0;
+  padding: 0;
+  color: #E8A149;
+  background-color: #E8A149;
+  border: 0;
+}
+
+a:link {
+  color: red;
+}
+
+/* visited link */
+a:visited {
+  color: #E8A149;
+}
+
+/* mouse over link */
+a:hover {
+  color: hotpink;
+}
+
+/* selected link */
+a:active {
+  color: yellow;
+}
+
+.present {
+	color: #ffffd3;
+	margin-top: 5px;
+	font-size: 17px;
+    font-family: "Arial";
+    font-weight: bold;
+    text-align: center;
+}
+
+.redirect_link {
+    margin-top: 42px;
+    margin-bottom: 25px;
+	color: white;
+	font-size: 26px;
+    font-family: "Times New Roman";
+    text-align: center;
+    word-wrap: normal;
+}
+
+.skills {
+	color: #ffffd3;
+	margin-left: 70px;
+	margin-top: 35px;
+	font-size: 18px;
+    font-family: "Times New Roman";
+    text-align: left;
+}
+
+@keyframes toggle {
+    from {
+        opacity:0;
+    }
+
+    15% {
+        opacity:1;
+    }
+
+    to {
+        opacity:0;
+    }
+}
+
+.owlArea {
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    animation: toggle 4s linear infinite;
+    top: 50px;
+    width: 120px;
+    height: 50px;
+    border: 0px solid white;
+}
+
+.canvas0 {
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: 800px;
+    border: 2px solid white;
+}
+
+.language_icon {
+	position: relative;
+	left: 168px;
+	top: -140px;
+	padding-left: 0;
+	padding-right: 0;
+}
