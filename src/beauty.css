@@ -53,7 +53,7 @@ a:active {
 }
 
 .present {
-	margin-top: 5px;
+	margin-top: 0%;
 	font-size: 17px;
     font-family: "Arial";
     font-weight: bold;
@@ -61,8 +61,8 @@ a:active {
 }
 
 .redirect_link {
-    margin-top: 42px;
-    margin-bottom: 25px;
+    margin-top: 3%;
+    margin-bottom: 3%;
 	color: white;
 	font-size: 26px;
     font-family: "Times New Roman";
@@ -71,9 +71,9 @@ a:active {
 }
 
 .skills {
-	color: #2e2e1f;
-	margin-left: 70px;
-	margin-top: 35px;
+	color: #ffcc99;
+	margin-left: 10%;
+	margin-top: 3.5%;
 	font-size: 22px;
     font-family: "Times New Roman";
     text-align: left;
@@ -99,7 +99,7 @@ a:active {
     margin-left: auto;
     margin-right: auto;
     animation: toggle 4s linear infinite;
-    top: 50px;
+    top: 10px;
     width: 120px;
     height: 50px;
     border: 0px solid white;
@@ -117,7 +117,7 @@ a:active {
 
 .language_icon {
 	position: relative;
-	left: 168px;
+	left: 16.5%;
 	top: -140px;
 	padding-left: 0;
 	padding-right: 0;
