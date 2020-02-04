@@ -112,15 +112,15 @@ a:active {
 	left: 0;
 	right: 0;
 	top: 94%;
-    width: 800px;
-    border: 2px solid white;
+    	width: 60%;
+    	border: 2px solid white;
 }
 
 .icon_1 {
 	position: absolute;
 	margin-left: auto;
 	margin-right: auto;
-	left: 20%;
+	left: 15%;
 	right: 0;
 	top: 100%;
 }
@@ -130,7 +130,7 @@ a:active {
 	position: absolute;
 	margin-left: auto;
 	margin-right: auto;
-	left: 32%;
+	left: 30%;
 	right: 0;
 	top: 100%;
 }
@@ -139,7 +139,7 @@ a:active {
 	position: absolute;
 	margin-left: auto;
 	margin-right: auto;
-	left: 44%;
+	left: 45%;
 	right: 0;
 	top: 100%;
 }
@@ -148,7 +148,7 @@ a:active {
 	position: absolute;
 	margin-left: auto;
 	margin-right: auto;
-	left: 56%;
+	left: 60%;
 	right: 0;
 	top: 100%;
 }
@@ -157,7 +157,7 @@ a:active {
 	position: absolute;
 	margin-left: auto;
 	margin-right: auto;
-	left: 68%;
+	left: 75%;
 	right: 0;
 	top: 100%;
 }
