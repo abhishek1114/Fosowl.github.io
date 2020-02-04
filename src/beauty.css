@@ -94,12 +94,11 @@ a:active {
 }
 
 .owlArea {
-    padding-left: 0;
-    padding-right: 0;
     margin-left: auto;
     margin-right: auto;
-    animation: toggle 4s linear infinite;
-    top: 10px;
+	animation: toggle 4s linear infinite;
+	left: 0%;
+    top: 3%;
     width: 120px;
     height: 50px;
     border: 0px solid white;
@@ -112,15 +111,15 @@ a:active {
 	left: 0%;
 	right: 0%;
 	top: 94%;
-    	width: 65%;
-    	border: 2px solid white;
+	width: 58%;
+	border: 2px solid white;
 }
 
 .icon_1 {
 	position: absolute;
 	margin-left: auto;
 	margin-right: auto;
-	left: 20%;
+	left: 25.5%;
 	right: 0;
 	top: 100%;
 }
@@ -130,7 +129,7 @@ a:active {
 	position: absolute;
 	margin-left: auto;
 	margin-right: auto;
-	left: 32%;
+	left: 36.5%;
 	right: 0;
 	top: 100%;
 }
@@ -139,7 +138,7 @@ a:active {
 	position: absolute;
 	margin-left: auto;
 	margin-right: auto;
-	left: 44%;
+	left: 47%;
 	right: 0;
 	top: 100%;
 }
@@ -148,7 +147,7 @@ a:active {
 	position: absolute;
 	margin-left: auto;
 	margin-right: auto;
-	left: 56%;
+	left: 57.5%;
 	right: 0;
 	top: 100%;
 }
