@@ -6,7 +6,6 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>Welcome on Martin website</title>
 		<link rel="stylesheet" href="./src/beauty.css">
-		<script src="./src/script.js"></script>
 	</head>
 	<body>
 		<div class="owlArea">
@@ -67,6 +66,24 @@
 			var circle4_b = document.getElementById("canvas").getContext("2d");
 			var circle5_b = document.getElementById("canvas").getContext("2d");
 
+			var image1 = new Image();
+			var image2 = new Image();
+			var image3 = new Image();
+			var image4 = new Image();
+			var image5 = new Image();
+
+			image1.src = "./assets/c.png";
+			image2.src = "./assets/csharp.png";
+			image3.src = "./assets/go.png";
+			image4.src = "./assets/js.png";
+			image5.src = "./assets/python.png";
+
+			circle.drawImage(image1,  62, 37);
+			circle.drawImage(image2, 205, 37);
+			circle.drawImage(image3, 347, 37);
+			circle.drawImage(image4, 490, 37);
+			circle.drawImage(image5, 632, 37);
+
 			my_draw_circle(circle, 82, 85, 1.0, "white");
 			my_draw_circle(circle2, 225, 85, 1.0, "white");
 			my_draw_circle(circle3, 367, 85, 1.0, "white");
@@ -92,18 +109,7 @@
 		window.onload = load_to_window;
 		</script>
 		<div class="canvas0">
-			<canvas id="canvas" width="900" height="150"></canvas>
-		</div>
-		<div class="language_icon">
-			<img src="./assets/c.png">
-			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-			<img src="./assets/csharp.png">
-			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-			<img src="./assets/go.png">
-			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-			<img src="./assets/js.png">
-			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-			<img src="./assets/python.png">
+			<canvas id="canvas" width="800%" height="150%"></canvas>
 		</div>
 	</body>
 </html>

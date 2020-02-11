@@ -107,18 +107,11 @@ a:active {
 
 .canvas0 {
 	left: 10%;
+  top : 80%;
 	position: relative;
     padding-left: 0;
     padding-right: 0;
     display: block;
-    width: 800px;
-    border: 2px solid white;
-}
-
-.language_icon {
-	position: relative;
-	left: 16.5%;
-	top: -140px;
-	padding-left: 0;
-	padding-right: 0;
+    width: 80%;
+    border: 0px solid white;
 }
