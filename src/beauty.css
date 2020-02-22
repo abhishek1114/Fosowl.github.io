@@ -14,16 +14,6 @@ html, body {
 	margin-bottom: 10px;
 }
 
-hr {
-  height: 30px;
-  margin: -0.5em 0;
-  position: relative;
-  padding: 0;
-  color: #E8A149;
-  background-color: #E8A149;
-  border: 0;
-}
-
 a:link {
   color: red;
 }
@@ -58,6 +48,17 @@ a:active {
   margin-left: -3%;
   position: absolute;
   z-index: 0;
+}
+
+hr {
+  height: 30px;
+  width: 5200px;
+  margin: -0.5em 0;
+  position: absolute;
+  padding: 0;
+  color: #E8A149;
+  background-color: #E8A149;
+  border: 0;
 }
 
 .present {
@@ -144,9 +145,9 @@ a:active {
 
 .skills {
 	color: #ffffff;
-  position: absolute;
-	margin-left: 10%;
-	margin-top: -2%;
+    position: absolute;
+	margin-left: 50%;
+	margin-top: 2%;
 	font-size: 22px;
     font-family: "Times New Roman";
     text-align: left;
@@ -168,7 +169,7 @@ a:active {
 
 .canvas0 {
 	left: 20%;
-  top : 75%;
+    top : 104%;
 	position: absolute;
     padding-left: 0;
     padding-right: 0;
