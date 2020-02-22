@@ -53,11 +53,11 @@ a:active {
 }
 
 .tree {
-  pointer-events: none;
+  pointer-events: auto;
   margin-top: 8%;
   margin-left: -3%;
   position: absolute;
-  z-index: -1;
+  z-index: 0;
 }
 
 .present {
@@ -79,7 +79,7 @@ a:active {
 }
 
 .redirect_link_1 {
-    z-index: 100;
+    z-index: 999999;
     left: 335px;
     top: 357px;
     position: absolute;
@@ -94,7 +94,7 @@ a:active {
 }
 
 .redirect_link_2 {
-    z-index: 100;
+    z-index: 999999;
     left: 500px;
     top: 280px;
     position: absolute;
@@ -109,7 +109,7 @@ a:active {
 }
 
 .redirect_link_3 {
-    z-index: 100;
+    z-index: 999999;
     left: 975px;
     top: 135px;
     position: absolute;
