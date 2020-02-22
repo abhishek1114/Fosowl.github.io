@@ -53,24 +53,36 @@ a:active {
 }
 
 .tree {
-  margin-top: 4.7%;
+  pointer-events: none;
+  margin-top: 8%;
   margin-left: -3%;
   position: absolute;
   z-index: -1;
 }
 
 .present {
-	margin-top: 0%;
-	font-size: 17px;
+    position: absolute;
+	  margin-top: 3%;
+    margin-left: 46%;
+	  font-size: 17px;
     font-family: "Arial";
     font-weight: bold;
     text-align: center;
 }
 
+.owlArea {
+    animation: toggle 4s linear infinite;
+    position : absolute;
+    top: -125px;
+    left: 630px;
+    border: 0px solid white;
+}
+
 .redirect_link_1 {
+    z-index: 100;
+    left: 335px;
+    top: 357px;
     position: absolute;
-    margin-left: 23%;
-    margin-top: 7%;
     background-color: #000000;
     padding: 10px 8px;
     border-radius: 25px;
@@ -82,9 +94,10 @@ a:active {
 }
 
 .redirect_link_2 {
+    z-index: 100;
+    left: 500px;
+    top: 280px;
     position: absolute;
-    margin-left: 35%;
-    margin-top: 1%;
     background-color: #000000;
     padding: 10px 8px;
     border-radius: 25px;
@@ -96,9 +109,10 @@ a:active {
 }
 
 .redirect_link_3 {
+    z-index: 100;
+    left: 975px;
+    top: 135px;
     position: absolute;
-    margin-left: 73%;
-    margin-top: -10%;
     background-color: #000000;
     padding: 10px 8px;
     border-radius: 25px;
@@ -150,18 +164,6 @@ a:active {
     to {
         opacity:0;
     }
-}
-
-.owlArea {
-    padding-left: 0;
-    padding-right: 0;
-    margin-left: auto;
-    margin-right: auto;
-    animation: toggle 4s linear infinite;
-    top: 10px;
-    width: 120px;
-    height: 50px;
-    border: 0px solid white;
 }
 
 .canvas0 {
