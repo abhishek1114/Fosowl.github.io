@@ -6,6 +6,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>Welcome on Martin website</title>
 		<link rel="stylesheet" href="./src/beauty.css">
+		<script src="https://cdn.jsdelivr.net/npm/baffle@0.3.6/dist/baffle.min.js"></script>
 	</head>
 	<body>
 		<script type="text/javascript">
@@ -25,9 +26,17 @@
 			my_draw_square(blinker, 75, 170, "black");
 		}
 		</script>
-		<div class="present">
-			<h1 style="color: #ffdd99;">Fosowl</h1>
-		</div>
+		<div class="present">Fosowl</div>
+		<script type="text/javascript">
+			const text = baffle(".present");
+
+			text.set({
+				characters : '█>▒ >▒▒▒/ %>▓▒> ░▒▓ @▒█▓█ ▒█▓▒ ░/> ▓/>< ▒▒▒▓',
+				speed: 120
+			});
+			text.start();
+			text.reveal(3000);
+		</script>
 		<div class="tree">
 			<img src="./assets/tree.png">
 			<div class="owlArea">

@@ -6,12 +6,57 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>About</title>
 		<link rel="stylesheet" href="../src/beauty.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+		<script src="https://cdn.jsdelivr.net/npm/baffle@0.3.6/dist/baffle.min.js"></script>
 	</head>
 	<body>
 		<a class="redirect_link_4" href="../index.html">Back</a>
-		<div class="about_picture">
-			<img src="../assets/me.png">
+		<div class="bio">
+			<div class="picture">
+				<img src="../assets/me.png">
+			</div>
+			<div class="about_me">
+				<div class="animate_hello">Hello !</div>
+				<br>
+				<ul>
+	    			<li>I am a develloper and computer science student passionate about AI and video game devellopement</li>
+	    			<li>i am also passionate by sport and space exploration !
+	    			</li>
+	    			<li>my skill varies from C, python and Go, to game devellopement (using unity and blender)
+	    			</li>
+	    			<li>or web devellopement like for this website.
+	    			</li>
+	    			<li>If you need me for any freelance work i am in game !</li>
+	    			<li> all you have to do is contact me :
+	    			</li>
+				</ul>
+			</div>
+			<br>
+			<br>
+			<div class="contact-info">
+				<div class="card">
+					<i class="card-icon far fa-envelope"></i>
+					<p>martin.legrand@epitech.eu</p>
+				</div>
+				<div class="card">
+					<i class="card-icon fas fa-phone"></i>
+					<p>07 83 64 22 36</p>
+				</div>
+				<div class="card">
+					<i class="card-icon fas fa-map-marker-alt"></i>
+					<p>near Toulouse, France</p>
+				</div>
+			</div>
 		</div>
-		<h1 style="color: white; margin-left : 30%"> ! This page is under developpement !</h1>
+		<script type="text/javascript">
+			const text = baffle(".animate_hello");
+
+			text.set({
+				characters : '█>▒ >▒▒▒/ %>▓▒> ░▒▓ @▒█▓█ ▒█▓▒ ░/> ▓/>< ▒▒▒▓',
+				speed: 120
+			});
+			text.start();
+			text.reveal(3000);
+		</script>
 	</body>
 </html>

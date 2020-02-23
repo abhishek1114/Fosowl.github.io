@@ -37,9 +37,8 @@ a:hover {
 	padding-bottom: 2px;
 }
 
-/* selected link */
-a:active {
-  color: yellow;
+li {
+    list-style-type: none;
 }
 
 .tree {
@@ -63,10 +62,12 @@ hr {
 
 .present {
     position: absolute;
-	  margin-top: 3%;
-    margin-left: 46.6%;
-	  font-size: 17px;
-    font-family: "Comic Sans MS";
+	margin-top: 3%;
+    color: #ffdd99;
+    letter-spacing: 7px;
+    margin-left: 45%;
+	font-size: 36px;
+    font-family: Poppins;
     font-weight: bold;
     text-align: center;
 }
@@ -138,11 +139,6 @@ hr {
     word-wrap: normal;
 }
 
-.about_picture {
-    margin-top: 22%;
-    margin-left: 40%;
-}
-
 .skills {
 	color: #ffffff;
     position: absolute;
@@ -176,4 +172,98 @@ hr {
     display: block;
     width: 80%;
     border: 0px solid white;
+}
+
+.bio {
+    position: absolute;
+    margin-top: 15%;
+    margin-left: 13%;
+    color: #E8A149;
+    font-family: "Times New Roman";
+    text-align: center;
+    word-wrap: normal;
+}
+
+.picture {
+    margin-left: 60px;
+}
+
+.animate_hello {
+    position: absolute;
+    margin-top: -40px;
+    color: #ffdd99;
+    letter-spacing: 4px;
+    margin-left: 360px;
+    font-size: 36px;
+    font-family: Poppins;
+    font-weight: bold;
+    text-align: center;
+}
+
+.about_me {
+    li{
+        max-width: 400px;
+        word-wrap: break-word;
+    }
+    overflow: hidden;
+    font-family: "Times New Roman";
+    font-size: 22px;
+    margin-left: 100px;
+    margin-top: 20px;
+}
+
+.contact-info {
+    box-sizing: border-box;
+    display: flex;
+    width: 100%;
+    max-width: 1200px;
+    align-items: center;
+    justify-content: center;
+    padding: 0 20px;
+}
+
+.card {
+    background: #E8A149;
+    color: white;
+    padding: 0 20px;
+    margin: 0 30px;
+    width: calc(33% - 20px);
+    height: 130px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.card-icon {
+    font-size: 32px;
+    background: #031921;
+    width: 65px;
+    height: 65px;
+    text-align: center;
+    line-height: 65px !important;
+    border-radius: 50%;
+    transition: 0.3s linear;
+}
+
+.card:hover .card-icon {
+    background: none;
+    transform: scale(1.5);
+}
+
+.card p{
+    margin-top: 20px;
+    font-weight: 300;
+    letter-spacing: 1px;
+    font-family: "Times New Roman";
+    font-weight: bold;
+    max-height: 0;
+    opacity: 0;
+    transition: 0.3s linear;
+}
+
+.card:hover p {
+    max-height:  40px;
+    opacity: 0.9;
 }
