@@ -35,7 +35,7 @@
 				speed: 120
 			});
 			text.start();
-			text.reveal(3000);
+			text.reveal(3600);
 		</script>
 		<div class="tree">
 			<img src="./assets/tree.png">
@@ -65,6 +65,7 @@
 		}
 
 		let i = 0;
+		let offset = 55;
 
 		function load_circle() {
 			var circle = document.getElementById("canvas").getContext("2d");
@@ -90,22 +91,22 @@
 			image4.src = "./assets/js.png";
 			image5.src = "./assets/python.png";
 
-			circle.drawImage(image1,  62, 67);
-			circle.drawImage(image2, 205, 67);
-			circle.drawImage(image3, 347, 67);
-			circle.drawImage(image4, 490, 67);
-			circle.drawImage(image5, 632, 67);
+			circle.drawImage(image1, 62 + offset, 67);
+			circle.drawImage(image2, 205 + offset, 67);
+			circle.drawImage(image3, 347 + offset, 67);
+			circle.drawImage(image4, 490 + offset, 67);
+			circle.drawImage(image5, 632 + offset, 67);
 
-			my_draw_circle(circle, 82, 120, 1.0, "white");
-			my_draw_circle(circle2, 225, 120, 1.0, "white");
-			my_draw_circle(circle3, 367, 120, 1.0, "white");
-			my_draw_circle(circle4, 510, 120, 1.0, "white");
-			my_draw_circle(circle5, 652, 120, 1.0, "white");
-			my_draw_circle(circle_b, 82, 120, 0.9 * (i / 100), "darkorange");
-			my_draw_circle(circle2_b, 225, 120, 0.5 * (i / 100), "darkorange");
-			my_draw_circle(circle3_b, 367, 120, 0.7 * (i / 100), "darkorange");
-			my_draw_circle(circle4_b, 510, 120, 0.3 * (i / 100), "darkorange");
-			my_draw_circle(circle5_b, 652, 120, 0.6 * (i / 100), "darkorange");
+			my_draw_circle(circle, 82 + offset, 120, 1.0, "white");
+			my_draw_circle(circle2, 225 + offset, 120, 1.0, "white");
+			my_draw_circle(circle3, 367 + offset, 120, 1.0, "white");
+			my_draw_circle(circle4, 510 + offset, 120, 1.0, "white");
+			my_draw_circle(circle5, 652 + offset, 120, 1.0, "white");
+			my_draw_circle(circle_b, 82 + offset, 120, 0.9 * (i / 100), "darkorange");
+			my_draw_circle(circle2_b, 225 + offset, 120, 0.5 * (i / 100), "darkorange");
+			my_draw_circle(circle3_b, 367 + offset, 120, 0.7 * (i / 100), "darkorange");
+			my_draw_circle(circle4_b, 510 + offset, 120, 0.3 * (i / 100), "darkorange");
+			my_draw_circle(circle5_b, 652 + offset, 120, 0.6 * (i / 100), "darkorange");
 			i++;
 
 			setTimeout(function() {
