@@ -15,7 +15,7 @@ html, body {
 }
 
 a:link {
-  color: red;
+  color: #E8A149;
 }
 
 /* visited link */
@@ -176,8 +176,8 @@ hr {
 
 .bio {
     position: absolute;
-    margin-top: 15%;
-    margin-left: 13%;
+    margin-top: 10%;
+    margin-left: 10%;
     color: #E8A149;
     font-family: "Times New Roman";
     text-align: center;
