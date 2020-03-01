@@ -17,6 +17,16 @@
 			</div>
 			<div class="about_me">
 				<div class="animate_hello">Hello !</div>
+				<script type="text/javascript">
+					const text = baffle(".animate_hello");
+
+					text.set({
+						characters : '█>▒ >▒▒▒/ %>▓▒> ░▒▓ @▒█▓█ ▒█▓▒ ░/> ▓/>< ▒▒▒▓',
+						speed: 120
+					});
+					text.start();
+					text.reveal(3900);
+				</script>
 				<br>
 				<ul>
 	    			<li>I am a develloper and computer science student passionate about AI and video game devellopement,</li>
@@ -27,9 +37,10 @@
 	    			<li>or web devellopement like for this website.
 	    			</li>
 	    			<li>If you need me for any freelance work i am on it !</li>
-	    			<li> All you have to do is contact me :
-	    			</li>
 				</ul>
+				<br>
+				<h3 class="contact_text">All you have to do is contact me : </h3>
+				<canvas id="line_canvas" width="800%" height="100%"></canvas>
 			</div>
 			<br>
 			<br>
@@ -46,17 +57,30 @@
 					<i class="card-icon fas fa-map-marker-alt"></i>
 					<p>near Toulouse, France</p>
 				</div>
+				<script type="text/javascript">
+				var canvas = document.getElementById('line_canvas');
+				 if (canvas.getContext) 
+				  {
+				    var context = canvas.getContext("2d");
+				    context.strokeStyle = '#E8A149';
+					context.beginPath();
+					context.moveTo(105, 0);
+					context.lineTo(0, 0);
+					context.lineTo(0, 75);
+					context.lineWidth = 5;
+					context.stroke();
+					context.moveTo(520, 0);
+					context.lineTo(625, 0);
+					context.lineTo(625, 75);
+					context.lineWidth = 5;
+					context.stroke();
+					context.moveTo(315, 20);
+					context.lineTo(315, 75);
+					context.lineWidth = 5;
+					context.stroke();
+				  }
+				</script>
 			</div>
 		</div>
-		<script type="text/javascript">
-			const text = baffle(".animate_hello");
-
-			text.set({
-				characters : '█>▒ >▒▒▒/ %>▓▒> ░▒▓ @▒█▓█ ▒█▓▒ ░/> ▓/>< ▒▒▒▓',
-				speed: 120
-			});
-			text.start();
-			text.reveal(3000);
-		</script>
 	</body>
 </html>

@@ -176,7 +176,7 @@ hr {
 
 .bio {
     position: absolute;
-    margin-top: 10%;
+    margin-top: 7%;
     margin-left: 10%;
     color: #E8A149;
     font-family: "Times New Roman";
@@ -215,6 +215,7 @@ hr {
 .contact-info {
     box-sizing: border-box;
     display: flex;
+    margin-left: 4%;
     width: 100%;
     max-width: 1200px;
     align-items: center;
@@ -245,6 +246,24 @@ hr {
     line-height: 65px !important;
     border-radius: 50%;
     transition: 0.3s linear;
+}
+
+.contact_text {
+    margin-left: 25%;
+    width: 410px;
+    border: 4px;
+    padding: 6px 0px;
+    text-align: center;
+    border-style: solid;
+    color: #ffdd99;
+    border-color: #E8A149;
+}
+
+
+#line_canvas {
+    position: absolute;
+    margin-left: -33%;
+    margin-top: -3%;
 }
 
 .card:hover .card-icon {
