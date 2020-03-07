@@ -4,22 +4,17 @@
 	<head>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="develloper freelance epitech student martin legrand github fosowl portfolio cv programmer internship">
+		<meta name="author" content="Martin">
+		<meta name="keywords" content="freelance, develloper, epitech, student, Fosowl, fosowl, portfolio, github, martin legrand">
 		<title>Welcome on Martin website</title>
-		<link rel="stylesheet" href="./src/beauty.css">
+		<link rel="stylesheet" href="./css/index.css">
+		<link rel="stylesheet" href="./css/all.css">
 		<script src="https://cdn.jsdelivr.net/npm/baffle@0.3.6/dist/baffle.min.js"></script>
+		<script src="./script/shared_script.js"></script>
 	</head>
 	<body>
 		<script type="text/javascript">
-		function my_draw_square(square, x, y, color) {
-			square.beginPath();
-			square.rect(x, y, 30, 10);
-			square.fillStyle = color;
-			square.strokeStyle = color;
-			square.fill;
-			square.lineWidth = 20;
-			square.stroke();
-		}
-
 		function owl_blink() {
 			var blinker = document.getElementById("owl").getContext("2d");
 
@@ -42,28 +37,19 @@
 			<div class="owlArea">
 				<canvas id="owl" width="300" height="300">
 			</div>
-			<a class="redirect_link_1" href="https://github.com/Fosowl">github</a>
-			<a class="redirect_link_2" href="https://www.linkedin.com/in/martin-legrand-309885185/">Linkedin</a>
-			<a class="redirect_link_3" href="./src/about.html">About</a>
+			<a class="redirect_link_1" target="_blank" href="https://github.com/Fosowl">github</a>
+			<a class="redirect_link_2" target="_blank" href="https://www.linkedin.com/in/martin-legrand-309885185/">Linkedin</a>
+			<a class="redirect_link_3" href="./page/about.html">About</a>
+			<a class="redirect_link_4" href="./page/project.html">Project</a>
 			<hr style="margin-top: 2%"></hr>
 			<div class="skills">
 				<h3>Skills :</h3>
 			</div>
 			<div class="canvas0">
-				<canvas id="canvas" width="800%" height="190%"></canvas>
+				<canvas id="canvas" width="900%" height="200%"></canvas>
 			</div>
 		</div>
 		<script type="text/javascript">
-		function my_draw_circle(circle, x, y, turn, color) {
-			circle.beginPath();
-			x += 30;
-			circle.arc(x, y, 60, 0, (Math.PI * 2) * turn, false);
-			circle.fillStyle = color;
-			circle.strokeStyle = color;
-			circle.lineWidth = 4;
-			circle.stroke();
-		}
-
 		let i = 0;
 		let offset = 55;
 
@@ -91,22 +77,22 @@
 			image4.src = "./assets/js.png";
 			image5.src = "./assets/python.png";
 
-			circle.drawImage(image1, 62 + offset, 67);
-			circle.drawImage(image2, 205 + offset, 67);
-			circle.drawImage(image3, 347 + offset, 67);
-			circle.drawImage(image4, 490 + offset, 67);
-			circle.drawImage(image5, 632 + offset, 67);
+			circle.drawImage(image1, 40 + offset, 67);
+			circle.drawImage(image2, 192 + offset, 67);
+			circle.drawImage(image3, 348 + offset, 67);
+			circle.drawImage(image4, 505 + offset, 67);
+			circle.drawImage(image5, 655 + offset, 67);
 
-			my_draw_circle(circle, 82 + offset, 120, 1.0, "white");
-			my_draw_circle(circle2, 225 + offset, 120, 1.0, "white");
+			my_draw_circle(circle, 57 + offset, 120, 1.0, "white");
+			my_draw_circle(circle2, 210 + offset, 120, 1.0, "white");
 			my_draw_circle(circle3, 367 + offset, 120, 1.0, "white");
-			my_draw_circle(circle4, 510 + offset, 120, 1.0, "white");
-			my_draw_circle(circle5, 652 + offset, 120, 1.0, "white");
-			my_draw_circle(circle_b, 82 + offset, 120, 0.9 * (i / 100), "darkorange");
-			my_draw_circle(circle2_b, 225 + offset, 120, 0.5 * (i / 100), "darkorange");
-			my_draw_circle(circle3_b, 367 + offset, 120, 0.7 * (i / 100), "darkorange");
-			my_draw_circle(circle4_b, 510 + offset, 120, 0.3 * (i / 100), "darkorange");
-			my_draw_circle(circle5_b, 652 + offset, 120, 0.6 * (i / 100), "darkorange");
+			my_draw_circle(circle4, 525 + offset, 120, 1.0, "white");
+			my_draw_circle(circle5, 677 + offset, 120, 1.0, "white");
+			my_draw_circle(circle_b, 57 + offset, 120, 0.9 * (i / 100), "#E8A149");
+			my_draw_circle(circle2_b, 210 + offset, 120, 0.5 * (i / 100), "#E8A149");
+			my_draw_circle(circle3_b, 367 + offset, 120, 0.7 * (i / 100), "#E8A149");
+			my_draw_circle(circle4_b, 525 + offset, 120, 0.3 * (i / 100), "#E8A149");
+			my_draw_circle(circle5_b, 677 + offset, 120, 0.6 * (i / 100), "#E8A149");
 			i++;
 
 			setTimeout(function() {

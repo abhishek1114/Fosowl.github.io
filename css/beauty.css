@@ -127,6 +127,20 @@ hr {
 
 .redirect_link_4 {
     position: absolute;
+    left: 315px;
+    top: 105px;
+    background-color: #000000;
+    padding: 10px 10px;
+    border-radius: 25px;
+    color: white;
+    font-size: 25px;
+    font-family: "Times New Roman";
+    text-align: center;
+    word-wrap: normal;
+}
+
+.redirect_link_back {
+    position: absolute;
     margin-left: 3%;
     margin-top: 5%;
     background-color: #000000;
@@ -185,7 +199,7 @@ hr {
 }
 
 .picture {
-    margin-left: 60px;
+    margin-left: 56px;
 }
 
 .animate_hello {

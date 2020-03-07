@@ -1,0 +1,149 @@
+
+.tree {
+  pointer-events: auto;
+  margin-top: 8%;
+  margin-left: -3%;
+  position: absolute;
+  z-index: 0;
+}
+
+hr {
+  height: 30px;
+  width: 5200px;
+  margin: -0.5em 0;
+  position: absolute;
+  padding: 0;
+  color: #E8A149;
+  background-color: #E8A149;
+  border: 0;
+}
+
+.present {
+    position: absolute;
+	margin-top: 3%;
+    color: #ffdd99;
+    letter-spacing: 7px;
+    margin-left: 45%;
+	font-size: 36px;
+    font-family: Poppins;
+    font-weight: bold;
+    text-align: center;
+}
+
+.owlArea {
+    animation: toggle 4s linear infinite;
+    position : absolute;
+    top: -125px;
+    left: 630px;
+    border: 0px solid white;
+}
+
+.redirect_link_1 {
+    z-index: 999999;
+    left: 335px;
+    top: 357px;
+    position: absolute;
+    background-color: #000000;
+    padding: 10px 8px;
+    border-radius: 25px;
+	  color: white;
+	  font-size: 25px;
+    font-family: "Times New Roman";
+    text-align: center;
+    word-wrap: normal;
+}
+
+.redirect_link_2 {
+    z-index: 999999;
+    left: 500px;
+    top: 280px;
+    position: absolute;
+    background-color: #000000;
+    padding: 10px 8px;
+    border-radius: 25px;
+    color: white;
+    font-size: 25px;
+    font-family: "Times New Roman";
+    text-align: center;
+    word-wrap: normal;
+}
+
+.redirect_link_3 {
+    z-index: 999999;
+    left: 975px;
+    top: 135px;
+    position: absolute;
+    background-color: #000000;
+    padding: 10px 8px;
+    border-radius: 25px;
+    color: white;
+    font-size: 25px;
+    font-family: "Times New Roman";
+    text-align: center;
+    word-wrap: normal;
+}
+
+.redirect_link_4 {
+    position: absolute;
+    left: 315px;
+    top: 105px;
+    background-color: #000000;
+    padding: 10px 10px;
+    border-radius: 25px;
+    color: white;
+    font-size: 25px;
+    font-family: "Times New Roman";
+    text-align: center;
+    word-wrap: normal;
+}
+
+.skills {
+	color: #ffffff;
+    position: absolute;
+	margin-left: 55%;
+	margin-top: 2%;
+	font-size: 22px;
+    font-family: "Times New Roman";
+    text-align: left;
+}
+
+@keyframes toggle {
+    from {
+        opacity:0;
+    }
+
+    15% {
+        opacity:1;
+    }
+
+    to {
+        opacity:0;
+    }
+}
+
+.canvas0 {
+	left: 20%;
+    top : 107%;
+	position: absolute;
+    padding-left: 0;
+    padding-right: 0;
+    display: block;
+    width: 80%;
+    border: 0px solid white;
+}
+
+.picture {
+    margin-left: 56px;
+}
+
+.about_me {
+    li{
+        max-width: 400px;
+        word-wrap: break-word;
+    }
+    overflow: hidden;
+    font-family: "Times New Roman";
+    font-size: 22px;
+    margin-left: 100px;
+    margin-top: 20px;
+}

@@ -4,16 +4,22 @@
 	<head>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>About</title>
-		<link rel="stylesheet" href="../src/beauty.css">
+		<meta name="author" content="Martin">
+		<title>About me</title>
+		<link rel="stylesheet" href="../css/about.css">
+		<link rel="stylesheet" href="../css/all.css">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
 		<script src="https://cdn.jsdelivr.net/npm/baffle@0.3.6/dist/baffle.min.js"></script>
+		<script src="../script/shared_script.js"></script>
 	</head>
 	<body>
-		<a class="redirect_link_4" href="../index.html">Back</a>
+		<a class="redirect_link_back" href="../index.html">Back</a>
 		<div class="bio">
 			<div class="picture">
 				<img src="../assets/me.png">
+				<canvas style="top: 80px; left: 513px; position: absolute;"
+				 id="picture_canvas" width="300%" height="300%">
+				</canvas>
 			</div>
 			<div class="about_me">
 				<div class="animate_hello">Hello !</div>
@@ -30,7 +36,7 @@
 				<br>
 				<ul>
 	    			<li>I am a develloper and computer science student passionate about AI and video game devellopement,</li>
-	    			<li>but I am also passionate by 3d modeling sport and aerospace !
+	    			<li>but I am also passionate by 3d modeling, sport and aerospace !
 	    			</li>
 	    			<li>My skill varies from C, python and Go, to game devellopement (using unity and blender)
 	    			</li>
