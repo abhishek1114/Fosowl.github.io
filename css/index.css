@@ -136,14 +136,46 @@ hr {
     margin-left: 56px;
 }
 
-.about_me {
-    li{
-        max-width: 400px;
-        word-wrap: break-word;
-    }
-    overflow: hidden;
-    font-family: "Times New Roman";
+.project {
+    color: #ffffff;
+    position: absolute;
+    margin-left: 49%;
+    margin-top: 71.8%;
     font-size: 22px;
-    margin-left: 100px;
-    margin-top: 20px;
+    font-family: "Times New Roman";
+    text-align: left;
+}
+
+.skill_printer_style {
+    color: #ffffff;
+    position: absolute;
+    margin-top: 7%;
+    margin-left: 30%;
+    font-size: 22px;
+    font-family: "Times New Roman";
+}
+
+.skill_1 {
+    margin-left: 0px;
+    margin-top: 160px;
+}
+
+.skill_2 {
+    margin-left: 160px;
+    margin-top: -40px;
+}
+
+.skill_3 {
+    margin-left: 310px;
+    margin-top: -40px;
+}
+
+.skill_4 {
+    margin-left: 465px;
+    margin-top: -40px;
+}
+
+.skill_5 {
+    margin-left: 620px;
+    margin-top: -40px;
 }

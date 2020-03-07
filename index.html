@@ -11,6 +11,7 @@
 		<link rel="stylesheet" href="./css/index.css">
 		<link rel="stylesheet" href="./css/all.css">
 		<script src="https://cdn.jsdelivr.net/npm/baffle@0.3.6/dist/baffle.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/vue"></script>
 		<script src="./script/shared_script.js"></script>
 	</head>
 	<body>
@@ -40,7 +41,7 @@
 			<a class="redirect_link_1" target="_blank" href="https://github.com/Fosowl">github</a>
 			<a class="redirect_link_2" target="_blank" href="https://www.linkedin.com/in/martin-legrand-309885185/">Linkedin</a>
 			<a class="redirect_link_3" href="./page/about.html">About</a>
-			<a class="redirect_link_4" href="./page/project.html">Project</a>
+			<a class="redirect_link_4" href="#bottom">Project</a>
 			<hr style="margin-top: 2%"></hr>
 			<div class="skills">
 				<h3>Skills :</h3>
@@ -48,10 +49,23 @@
 			<div class="canvas0">
 				<canvas id="canvas" width="900%" height="200%"></canvas>
 			</div>
+			<div id="skill_printer" class="skill_printer_style">
+				<h3 class="skill_1"> {{ percent_1 }} </h3>
+				<h3 class="skill_2"> {{ percent_2 }} </h3>
+				<h3 class="skill_3"> {{ percent_3 }} </h3>
+				<h3 class="skill_4"> {{ percent_4 }} </h3>
+				<h3 class="skill_5"> {{ percent_5 }} </h3>
+			</div>
 		</div>
+
 		<script type="text/javascript">
 		let i = 0;
 		let offset = 55;
+		let level_1 = 0.85;
+		let level_2 = 0.47;
+		let level_3 = 0.6;
+		let level_4 = 0.37;
+		let level_5 = 0.63;
 
 		function load_circle() {
 			var circle = document.getElementById("canvas").getContext("2d");
@@ -88,11 +102,11 @@
 			my_draw_circle(circle3, 367 + offset, 120, 1.0, "white");
 			my_draw_circle(circle4, 525 + offset, 120, 1.0, "white");
 			my_draw_circle(circle5, 677 + offset, 120, 1.0, "white");
-			my_draw_circle(circle_b, 57 + offset, 120, 0.9 * (i / 100), "#E8A149");
-			my_draw_circle(circle2_b, 210 + offset, 120, 0.5 * (i / 100), "#E8A149");
-			my_draw_circle(circle3_b, 367 + offset, 120, 0.7 * (i / 100), "#E8A149");
-			my_draw_circle(circle4_b, 525 + offset, 120, 0.3 * (i / 100), "#E8A149");
-			my_draw_circle(circle5_b, 677 + offset, 120, 0.6 * (i / 100), "#E8A149");
+			my_draw_circle(circle_b, 57 + offset, 120, level_1 * (i / 100), "#E8A149");
+			my_draw_circle(circle2_b, 210 + offset, 120, level_2 * (i / 100), "#E8A149");
+			my_draw_circle(circle3_b, 367 + offset, 120, level_3 * (i / 100), "#E8A149");
+			my_draw_circle(circle4_b, 525 + offset, 120, level_4 * (i / 100), "#E8A149");
+			my_draw_circle(circle5_b, 677 + offset, 120, level_5 * (i / 100), "#E8A149");
 			i++;
 
 			setTimeout(function() {
@@ -106,6 +120,25 @@
 			window.requestAnimationFrame(load_circle);
 		}
 		window.onload = load_to_window;
-		</script>
+
+		var skill_printer = new Vue({
+		  el: '#skill_printer',
+		  data: {
+		    percent_1: level_1 * 100 + ' %',
+		    percent_2: level_2 * 100 + ' %',
+		    percent_3: level_3 * 100 + ' %',
+		    percent_4: level_4 * 100 + ' %',
+		    percent_5: level_5 * 100 + ' %',
+		  }
+		})
+	</script>
+		<hr style="margin-top: 72%"></hr>
+		<div class="project">
+			<h3>Project :</h3>
+			<br>
+			<br>
+			<h3>Coming son...</h3>
+			<br id="bottom">
+		</div>
 	</body>
 </html>
