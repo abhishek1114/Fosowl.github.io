@@ -4,7 +4,7 @@
 	<head>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<meta name="description" content="develloper freelance epitech student martin legrand github fosowl portfolio cv programmer internship">
+		<meta name="name" content="develloper freelance epitech student martin legrand github fosowl portfolio cv programmer internship">
 		<meta name="author" content="Martin">
 		<meta name="keywords" content="freelance, develloper, epitech, student, Fosowl, fosowl, portfolio, github, martin legrand">
 		<title>Welcome on Martin website</title>
@@ -135,10 +135,122 @@
 		<hr style="margin-top: 72%"></hr>
 		<div class="project">
 			<h3>Project :</h3>
-			<br>
-			<br>
-			<h3>Coming son...</h3>
-			<br id="bottom">
 		</div>
+		<br>
+		<div class="project-wrapper">
+			<div class="project-items-wrapper">
+				<div class="single-item-wrapper">
+					<div class="project-img-background" style="background-image:url(./assets/warlock.png)"></div>
+
+					<div class="item-text">
+						<div id="not-hidden-item">
+							<div class="project-language_icon">
+								<img src="./assets/c.png" style="margin-left: 65px">
+							</div>
+							<div class="project-name">Warlock C libraries</div>
+						</div>
+						<div id="hidden-item">
+							<img src="https://travis-ci.org/Fosowl/warlock-C-libraries.svg?branch=master" alt="Build Status"/>
+							<p class="project-description"><strong>A C libraries with a fancy name i made for student at my university and develloper, come with documentation, and develloped in CI/CD with travis, docker, and criterion.</strong></p>
+						</div>
+					</div>
+				</div>
+
+				<div class="single-item-wrapper">
+					<div class="project-img-background" style="background-image:url(./assets/radar.png)"></div>
+
+					<div class="item-text">
+						<div id="not-hidden-item">
+							<div class="project-language_icon">
+								<img src="./assets/c.png" style="margin-left: 45px">
+							</div>
+							<div class="project-name">Radar simulation</div>
+						</div>
+						<div id="hidden-item">
+							<p class="project-description"><strong>A project where I had to render as many plane as possible on a world map.</strong></p>
+						</div>
+					</div>
+				</div>
+
+				<div class="single-item-wrapper">
+					<div class="project-img-background" style="background-image:url(./assets/shell.png)"></div>
+
+					<div class="item-text">
+						<div id="not-hidden-item">
+							<div class="project-language_icon">
+								<img src="./assets/c.png" style="margin-left: 50px">
+							</div>
+							<div class="project-name">TCSH like shell</div>
+						</div>
+						<div id="hidden-item">
+							<p class="project-description"><strong>A remake of the Unix TCSH Shell.</strong></p>
+						</div>
+					</div>
+				</div>
+
+				<div class="single-item-wrapper">
+					<div class="project-img-background" style="background-image:url(./assets/Lucid-past.png)"></div>
+
+					<div class="item-text">
+						<div id="not-hidden-item">
+							<div class="project-language_icon">
+								<img src="./assets/csharp.png" style="margin-left: 15px">	
+							</div>
+							<div class="project-name">Lucid Past</div>
+						</div>
+						<div id="hidden-item">
+							<p class="project-description"><strong>A game made in 48h during the global game jam.</strong></p>
+						</div>
+					</div>
+				</div>
+
+				<div class="single-item-wrapper">
+					<div class="project-img-background" style="background-image:url(./assets/wall-e.png)"></div>
+					<div class="item-text">
+						<div id="not-hidden-item">
+							<div class="project-language_icon">
+								<img src="./assets/blender.png" style="margin-left: -10px">
+							</div>
+							<div class="project-name">Wall-e</div>
+						</div>
+						<div id="hidden-item">
+							<p class="project-description"><strong>An exemple of project I can make with blender.</strong></p>
+						</div>
+					</div>
+				</div>
+
+				<div class="single-item-wrapper">
+					<div class="project-img-background" style="background-image:url(./assets/neural.png)"></div>
+
+					<div class="item-text">
+						<div id="not-hidden-item">
+							<div class="project-language_icon">
+								<img src="./assets/go.png" style="margin-left: 35px">	
+							</div>
+							<div class="project-name">Coming soon..</div>
+						</div>
+						<div id="hidden-item">
+							<div class="project-description"><strong>...</strong></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<br id="bottom">
 	</body>
+	<script>
+		const items = document.querySelectorAll('.single-item-wrapper')
+
+		items.forEach(item => {
+			item.addEventListener('mouseover', () => {
+				item.childNodes[1].classList.add
+				('img-darken');
+			})
+
+			item.addEventListener('mouseout', () => {
+				item.childNodes[1].classList.remove
+				('img-darken');
+			})
+		})
+	</script>
 </html>

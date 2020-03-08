@@ -138,6 +138,7 @@ hr {
 
 .project {
     color: #ffffff;
+    text-align: center;
     position: absolute;
     margin-left: 49%;
     margin-top: 71.8%;
@@ -178,4 +179,63 @@ hr {
 .skill_5 {
     margin-left: 620px;
     margin-top: -40px;
+}
+
+/* project template style*/
+
+.project-wrapper {
+    margin-top: 74.5%;
+}
+
+.project-items-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.single-item-wrapper {
+    position: relative;
+}
+
+.project-img-background {
+    height: 350px;
+    width: 100%;
+    margin-left: 0%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.item-text {
+    position: absolute;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    padding-left: 0%;
+    padding-right: 100%;
+    padding-top: 2%;
+}
+
+.project-name {
+    font-size: 28px;
+    color: white;
+}
+
+.project-description {
+    font-size: 18px;
+    color: #E8A149;
+}
+
+.project-language_icon {
+    width: 50%;
+    margin-bottom: 20px;
+}
+
+.img-darken {
+    transition: 1s;
+    filter: brightness(15%);
 }
