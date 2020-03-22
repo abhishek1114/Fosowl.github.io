@@ -15,13 +15,6 @@
 		<script src="./script/shared_script.js"></script>
 	</head>
 	<body>
-		<script type="text/javascript">
-		function owl_blink() {
-			var blinker = document.getElementById("owl").getContext("2d");
-
-			my_draw_square(blinker, 75, 170, "black");
-		}
-		</script>
 		<div class="present">Fosowl</div>
 		<script type="text/javascript">
 			const text = baffle(".present");
@@ -41,7 +34,7 @@
 			<a class="redirect_link_1" target="_blank" href="https://github.com/Fosowl">github</a>
 			<a class="redirect_link_2" target="_blank" href="https://www.linkedin.com/in/martin-legrand-309885185/">Linkedin</a>
 			<a class="redirect_link_3" href="./page/about.html">About</a>
-			<a class="redirect_link_4" href="#bottom">Project</a>
+			<a class="redirect_link_4" href="#walle">Project</a>
 			<hr style="margin-top: 2%"></hr>
 			<div class="skills">
 				<h3>Skills :</h3>
@@ -59,6 +52,12 @@
 		</div>
 
 		<script type="text/javascript">
+		function owl_blink() {
+			var blinker = document.getElementById("owl").getContext("2d");
+
+			my_draw_square(blinker, 75, 170, "black");
+		}
+
 		let i = 0;
 		let offset = 55;
 		let level_1 = 0.85;
@@ -139,9 +138,8 @@
 		<br>
 		<div class="project-wrapper">
 			<div class="project-items-wrapper">
-				<div class="single-item-wrapper">
+				<div class="single-item-wrapper" id="warlock">
 					<div class="project-img-background" style="background-image:url(./assets/warlock.png)"></div>
-
 					<div class="item-text">
 						<div id="not-hidden-item">
 							<div class="project-language_icon">
@@ -150,13 +148,12 @@
 							<div class="project-name">Warlock C libraries</div>
 						</div>
 						<div id="hidden-item">
-							<img src="https://travis-ci.org/Fosowl/warlock-C-libraries.svg?branch=master" alt="Build Status"/>
 							<p class="project-description"><strong>A C libraries with a fancy name i made for student at my university and develloper, come with documentation, and develloped in CI/CD with travis, docker, and criterion.</strong></p>
 						</div>
 					</div>
 				</div>
 
-				<div class="single-item-wrapper">
+				<div class="single-item-wrapper" id="radar">
 					<div class="project-img-background" style="background-image:url(./assets/radar.png)"></div>
 
 					<div class="item-text">
@@ -172,7 +169,7 @@
 					</div>
 				</div>
 
-				<div class="single-item-wrapper">
+				<div class="single-item-wrapper" id="tcsh">
 					<div class="project-img-background" style="background-image:url(./assets/shell.png)"></div>
 
 					<div class="item-text">
@@ -188,7 +185,7 @@
 					</div>
 				</div>
 
-				<div class="single-item-wrapper">
+				<div class="single-item-wrapper" id="lucid">
 					<div class="project-img-background" style="background-image:url(./assets/Lucid-past.png)"></div>
 
 					<div class="item-text">
@@ -204,7 +201,7 @@
 					</div>
 				</div>
 
-				<div class="single-item-wrapper">
+				<div class="single-item-wrapper" id="walle">
 					<div class="project-img-background" style="background-image:url(./assets/wall-e.png)"></div>
 					<div class="item-text">
 						<div id="not-hidden-item">
@@ -219,7 +216,7 @@
 					</div>
 				</div>
 
-				<div class="single-item-wrapper">
+				<div class="single-item-wrapper" id="neural">
 					<div class="project-img-background" style="background-image:url(./assets/neural.png)"></div>
 
 					<div class="item-text">
@@ -236,7 +233,7 @@
 				</div>
 			</div>
 		</div>
-		<br id="bottom">
+		<br>
 	</body>
 	<script>
 		const items = document.querySelectorAll('.single-item-wrapper')
@@ -252,5 +249,34 @@
 				('img-darken');
 			})
 		})
+		document.getElementById("warlock").onmousedown = function () {
+    		window.open('https://github.com/Fosowl/warlock-C-libraries','_blank');
+    		return true;
+		};
+
+		document.getElementById("radar").onmousedown = function () {
+    		window.open('https://github.com/Fosowl/FlightRadar24-like-simulation','_blank');
+    		return true;
+		};
+
+		document.getElementById("lucid").onmousedown = function () {
+    		window.open('https://globalgamejam.org/2020/games/lucide-past-0','_blank');
+    		return true;
+		};
+
+		document.getElementById("tcsh").onmousedown = function () {
+    		alert("Project is under devellopement, no link available");
+    		return true;
+		};
+
+		document.getElementById("walle").onmousedown = function () {
+    		alert("no link for this project");
+    		return true;
+		};
+
+		document.getElementById("neural").onmousedown = function () {
+    		alert("no link for this project");
+    		return true;
+		};
 	</script>
 </html>
