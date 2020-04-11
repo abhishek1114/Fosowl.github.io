@@ -16,6 +16,6 @@
 			circle.arc(x, y, 65, 0, (Math.PI * 2) * turn, false);
 			circle.fillStyle = color;
 			circle.strokeStyle = color;
-			circle.lineWidth = 6;
+			circle.lineWidth = 10;
 			circle.stroke();
 		}
