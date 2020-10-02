@@ -1,0 +1,17 @@
+{
+"companyName": "Geonef",
+"productName": "beaumontPrototype",
+"productVersion": "1.0",
+"dataUrl": "web_build_october.data.unityweb",
+"wasmCodeUrl": "web_build_october.wasm.code.unityweb",
+"wasmFrameworkUrl": "web_build_october.wasm.framework.unityweb",
+"graphicsAPI": ["WebGL 2.0","WebGL 1.0"],
+"webglContextAttributes": {"preserveDrawingBuffer": false},
+"backgroundUrl": "web_build_october.jpg",
+"splashScreenStyle": "Light",
+"backgroundColor": "#FFFFFF",
+"cacheControl": {"default": "must-revalidate"},
+"developmentBuild": false,
+"multithreading": false,
+"unityVersion": "2019.3.15f1"
+}
